@@ -1,20 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MoviesHome from './pages/MoviesHome';
-import SearchMovies from './pages/SearchMovies';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Nav from "./components/ui/Nav";
+import Home from "./components/pages/Home";
 
-function App() {  
-return (
-  <Router> 
-    <div className="App">
-      <Routes>
-        <Route path='/' element={<MoviesHome />}></Route>
-        <Route path='/:imdbID' element={<SearchMovies />}></Route>
-      </Routes>
+function App() {
+  return (
+    
+  <Router>
+    <div>
+      <Nav numberOfItems={numberOfItems()} />      
+    <Routes>
+      <Route path="/" exact element={<Home/>} />
+      <Route />
+      <Route />
+      <Route />
+    </Routes>
     </div>
-  </Router> 
-  );
-
-
+  </Router>
+    
+  )
 }
 
-export default App;
+export default App
