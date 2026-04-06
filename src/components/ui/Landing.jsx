@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import moviesheader from '../assets/moviesheader.png'
 
 const Landing = () => {
   return (
@@ -14,7 +13,7 @@ const Landing = () => {
                     </Link>
                 </div>
                 <figure className='header__img--wrapper'>
-                    <img src={moviesheader} alt="" />
+                    <img src="/assets/moviesheadersvg.png" alt="" />
                 </figure>
             </div>
         </header>

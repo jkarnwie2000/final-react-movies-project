@@ -4,7 +4,7 @@
 export const movies = [
       {
       id: 1,
-      Title: "Zz: The Fast and the Furious",
+      title: "Zz: The Fast and the Furious",
       url: "assets/The Fast and the Furious.png",
       Year: "2001",
       originalPrice: 25.35,
@@ -13,7 +13,7 @@ export const movies = [
     },
     {
       id: 2,
-      Title: "Bb: Fast & Furious 6",
+      title: "Bb: Fast & Furious 6",
       url: "assets/Fast & Furious 6.png",
       Year: "2013",
       originalPrice: 11.55,
@@ -22,7 +22,7 @@ export const movies = [
     },
     {
       id: 3,
-      Title: "Qq: Fast Five",
+      title: "Qq: Fast Five",
       url: "assets/Fast Five.png",
       Year: "2011",
       originalPrice: 13.13,
@@ -31,7 +31,7 @@ export const movies = [
     },
     {
       id: 4,
-      Title: "Mm: Fast & Furious",
+      title: "Mm: Fast & Furious",
       url: "assets/Fast & Furious.png",
       Year: "2009",
       originalPrice: 20.11,
@@ -40,7 +40,7 @@ export const movies = [
     },    
     {
       id: 5,
-      Title: "Ll: 2 Fast 2 Furious",
+      title: "Ll: 2 Fast 2 Furious",
       url: "assets/2 Fast 2 Furious.png",
       Year: "2003",
       originalPrice: 17.11,
@@ -50,7 +50,7 @@ export const movies = [
     },    
     {
       id: 6,
-      Title: "Gg: Fast X",
+      title: "Gg: Fast X",
       url: "assets/Fast X.png",
       Year: "2023",
       originalPrice: 32.22,
@@ -59,7 +59,7 @@ export const movies = [
     },    
     {
       id: 1,
-      Title: "Ss: The Fast and the Furious",
+      title: "Ss: The Fast and the Furious",
       url: "assets/The Fast and the Furious.png",
       Year: "2001",
       originalPrice: 42.35,
@@ -69,7 +69,7 @@ export const movies = [
     },
     {
       id: 2,
-      Title: "Kk: Fast & Furious 6",
+      title: "Kk: Fast & Furious 6",
       url: "assets/Fast & Furious 6.png",
       Year: "2013",
       originalPrice: 60.55,
@@ -78,7 +78,7 @@ export const movies = [
     },
     {
       id: 3,
-      Title: "Tt: Fast Five",
+      title: "Tt: Fast Five",
       url: "assets/Fast Five.png",
       Year: "2011",
       originalPrice: 41.13,
@@ -87,7 +87,7 @@ export const movies = [
     },
     {
       id: 4,
-      Title: "Pp: Fast & Furious",
+      title: "Pp: Fast & Furious",
       url: "assets/Fast & Furious.png",      
       Year: "2009",
       originalPrice: 70.11,
@@ -96,7 +96,7 @@ export const movies = [
     },    
     {
       id: 6,
-      Title: "Ww: 2 Fast 2 Furious",
+      title: "Ww: 2 Fast 2 Furious",
       url: "assets/2 Fast 2 Furious.png",
       Year: "2003",
       originalPrice: 80.11,
@@ -105,7 +105,7 @@ export const movies = [
     },    
     {
       id: 9,
-      Title: "Yy: Fast X",
+      title: "Yy: Fast X",
       url: "assets/Fast X.png",
       Year: "2023",
       originalPrice: 98.22,

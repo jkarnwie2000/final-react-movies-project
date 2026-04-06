@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import MoviePageLogo from '../assets/MoviePageLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -10,14 +9,14 @@ const Nav = ({ numberOfItems }) =>  {
   }
 
   function closeMenu() {
-    document.body.remove('menu--open');
+    document.body.classList.remove('menu--open');
   }
 
   return (
     <nav>
         <div>
             <Link to='/'>
-            <img src={MoviePageLogo} alt="" className='logo'/>
+            <img src="/assets/moviepagelogo.png" alt="" className='logo' />
             </Link>
             <ul className='nav__links'>
                 <li className='nav__list'>
@@ -38,7 +37,7 @@ const Nav = ({ numberOfItems }) =>  {
                     <FontAwesomeIcon icon='shopping-cart' />
                     </Link> 
                     {
-                    numberOfItems > 0 && <span className='cart__length'>{numberOfItems}</span>
+                    // numberOfItems > 0 && <span className='cart__length'>{numberOfItems}</span>
                     }
                 </li>
             </ul>

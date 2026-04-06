@@ -1,5 +1,6 @@
 
 import { movies } from "../../data"
+import Movie from "./Movie"
 
 
 const Featured = () => {
@@ -8,14 +9,14 @@ const Featured = () => {
         <div className="container">
             <div className="row">
                 <h2 className="section__title">
-                    Featured Books
+                    Featured Movies
                 </h2>
                 <div className="movies">
                     {movies
                     .filter(movie => movie.rating === 5)
                     .slice(0, 4)
                     .map(movie =>
-                    <movie movie={movie} key={movie.id} />)
+                    <Movie movie={movie} key={movie.id} />)
                     }
                 </div>
             </div>
