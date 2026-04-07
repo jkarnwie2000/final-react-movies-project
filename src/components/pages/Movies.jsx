@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { movies } from "../../data.js";
 import Movie from "../ui/Movie";
 
 

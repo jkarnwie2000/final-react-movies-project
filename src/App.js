@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Nav from './components/ui/Nav';
 import Home from "./components/pages/Home";
 import { useEffect, useState } from "react";
-import { counter } from "@fortawesome/fontawesome-svg-core";
 import Movies from "./components/pages/Movies";
 import { movies } from "./data.js";
 import MovieInfo from "./components/pages/MovieInfo";

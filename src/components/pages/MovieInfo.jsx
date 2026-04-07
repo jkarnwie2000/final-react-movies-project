@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { movies } from '../../data.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Rating from '../ui/Rating';
 import Price from '../ui/Price';
