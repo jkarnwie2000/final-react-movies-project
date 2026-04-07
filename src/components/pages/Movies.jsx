@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { movies } from "../../data";
+import { movies } from "../../data.js";
 import Movie from "../ui/Movie";
 
 
@@ -7,7 +7,7 @@ import Movie from "../ui/Movie";
 const Movies = ({ movies: initialMovies }) => {
 const [movies, setMovies] = useState(initialMovies)
 function filterMovies(filter) {
-    console.log(filter)
+
     if (filter === "LOW_TO_HIGH") {
         setMovies(movies.slice().sort((a, b) => (a.salePrice || a.originalPrice) - (b.salePrice || b.originalPrice)))
     }
@@ -30,7 +30,7 @@ function filterMovies(filter) {
                             <h2 className="section__title movies__header--title">All Movies</h2>
                             <select id="filter" defaultValue="DEFAULT" onChange={(event) => filterMovies(event.target.value)}>
                             <option value="DEFAULT" disabled>Sort</option>
-                            <option value="LOW_T0_HIGH">Price, Low to High</option>
+                            <option value="LOW_TO_HIGH">Price, Low to High</option>
                             <option value="HIGH_TO_LOW">Price, High to Low</option>
                             <option value="RATING">Rating</option>
                             </select>

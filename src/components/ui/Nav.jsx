@@ -14,7 +14,7 @@ const Nav = ({ numberOfItems }) =>  {
 
   return (
     <nav>
-        <div>
+        <div className='nav__container'>
             <Link to='/'>
             <img src="/assets/moviepagelogo.png" alt="" className='logo' />
             </Link>
@@ -25,7 +25,7 @@ const Nav = ({ numberOfItems }) =>  {
                     </Link>
                 </li>
                 <li className='nav__list'>
-                    <Link to='/' className='nav__link'>
+                    <Link to='/movies' className='nav__link'>
                     Movies
                     </Link>                    
                 </li>
@@ -37,7 +37,7 @@ const Nav = ({ numberOfItems }) =>  {
                     <FontAwesomeIcon icon='shopping-cart' />
                     </Link> 
                     {
-                    // numberOfItems > 0 && <span className='cart__length'>{numberOfItems}</span>
+                    numberOfItems > 0 && <span className='cart__length'>{numberOfItems}</span>
                     }
                 </li>
             </ul>

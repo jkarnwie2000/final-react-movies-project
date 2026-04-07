@@ -42,25 +42,25 @@ ul {
 }
 
 h2 {
+   color: #000;
   font-size: 32px;
   margin-bottom: 32px;
   text-align: center;
 }
 
 .nav__container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    padding: 0 32px;    
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
 nav {
   height: 80px;
-  display: flex;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;  
   background-color: white;
   position: relative;
 }
@@ -70,7 +70,7 @@ nav {
   background-color: transparent;
   font-size: 32px;
   border: none;
-  color: gold;
+  color: #000;
   display: none;
 }
 
@@ -174,11 +174,12 @@ button:active {
 
 
 .nav__link {
+  color: #000;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   padding: 8px;
-  color:gold;
+  
 }
 
 .nav__list {
@@ -192,8 +193,7 @@ button:active {
   text-decoration: underline;
 }
 
-.nav__link--primary {
-    border: 2px solid #242424;
+.nav__link--primary {    
     border-radius: 4px;
 }
 
@@ -236,10 +236,11 @@ li {
 }
 
 .logo {
+    border-color: none;
     padding-top: 40px;
     width: 240px;
     height: 120px;
-    font-size: 110px;
+    font-size: 110px;    
 }
 
 .container {
@@ -258,6 +259,8 @@ li {
 }
 
 .row__column {
+  justify-content: center;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,7 +312,7 @@ li {
   flex-direction: column;
 }
 
-.highlight__para {
+.highlight__para {    
   text-align: center;
   max-width: 280px;
 }
@@ -336,8 +339,7 @@ li {
 /*FEATURES*/
 
 #features {
-  padding-top: 8vw;
-  background-color: rgba(115, 66, 214, 0.1);
+  padding-top: 8vw;  
   align-items: center;
 }
 
@@ -346,8 +348,7 @@ li {
 } */
 /*movies beginning*/
 
-#movies__body {
-  background-color: rgba(115, 66, 214, 0.1);
+#movies__body {  
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -540,6 +541,7 @@ img {
 }
 
 .fa-arrow-left {
+  color: #000;
   font-size: 30px;
 }
 
@@ -581,10 +583,10 @@ img {
 */
 
 .cart__header {
-  background-color: #7342d6;
+  background-color: gold;
   margin: 0 24px;
   padding: 8px 16px;
-  color: white;
+  color: #000;
   display: flex;
 }
 
@@ -752,6 +754,10 @@ img {
     font-size: 40px;
   }
 
+  .logo {
+    border-color: none;
+  }
+
   h2 {
     font-size: 26px;
   }
@@ -785,6 +791,10 @@ img {
 
   .nav__list {
     display: none;
+  }
+
+  .logo {
+    border-color: none;
   }
 
   .highlight {

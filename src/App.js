@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import Nav from "./components/ui/Nav";
+import Nav from './components/ui/Nav';
 import Home from "./components/pages/Home";
 import { useEffect, useState } from "react";
 import { counter } from "@fortawesome/fontawesome-svg-core";
 import Movies from "./components/pages/Movies";
-import { movies } from "./data";
+import { movies } from "./data.js";
 import MovieInfo from "./components/pages/MovieInfo";
 import Cart from "./components/pages/Cart";
 import Footer from "./components/ui/Footer";
@@ -17,7 +17,7 @@ function App() {
   }
 
   function changeQuantity(movie, quantity) {
-    setCart(cart.map(item => item === movie.id 
+    setCart(cart.map(item => item.id === movie.id 
       ? {
         ...item,
         quantity: +quantity,
@@ -47,7 +47,7 @@ function App() {
     
   <Router>
     <div className="App">
-      <Nav numberOfItems={numberOfItems()} />      
+    <Nav numberOfItems={numberOfItems()} />      
     <Routes>
       <Route path="/" exact element={<Home/>} />
       <Route path="/movies" exact element={<Movies movies={movies} />} />

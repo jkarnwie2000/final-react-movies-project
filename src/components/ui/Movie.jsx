@@ -6,13 +6,13 @@ import Rating from './Rating';
 const Movie = ({ movie }) => {
 return (
     
-<div class="movie">
+<div className="movie">
     <Link to={`/movies/${movie.id}`}>
-    <figure class="movie__img--wrapper">
+    <figure className="movie__img--wrapper">
         <img src={movie.url} alt='' className='movie__img' />
     </figure>
     </Link>
-    <div class="movie__title">
+    <div className="movie__title">
         <Link to={`/movies/${movie.id}`} className='movie__title--link'> 
         {movie.title}
         </Link>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { movies } from '../../data';
+import { movies } from '../../data.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Rating from '../ui/Rating';
 import Price from '../ui/Price';
@@ -13,7 +13,7 @@ import Movie from '../ui/Movie';
 
 
 
-const MovieInfo = (movies, addToCart, cart) => {
+const MovieInfo = ({movies, addToCart, cart}) => {
 const { id } = useParams();
 const movie = movies.find(movie => +movie.id === +id);
 
@@ -31,10 +31,10 @@ function movieExistsOnCart() {
             <div className='movies__container'>
                 <div className='row'>
                     <div className='movie__selected--top'>
-                        <Link to='/movies' className='movie__link' >
+                        <Link to='/movies' className='' >
                             <FontAwesomeIcon icon='arrow-left' />
                         </Link>
-                        <Link to='/movies' className='movie__link'>
+                        <Link to='/movies' className=''>
                         <h2 movie__selected--title--top>Movies</h2>                        
                         </Link>
                     </div>

@@ -1,7 +1,7 @@
 
-import { movies } from "../../data"
-import Movie from "./Movie"
 
+import Movie from "./Movie"
+import { movies } from "../../data.js"
 
 const Featured = () => {
   return (
