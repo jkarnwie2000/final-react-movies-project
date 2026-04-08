@@ -767,7 +767,9 @@ img {
   }
 
   .movie {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .movie__selected {

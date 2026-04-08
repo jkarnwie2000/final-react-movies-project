@@ -7,11 +7,6 @@ import Movie from '../ui/Movie';
 
 
 
-
-
-
-
-
 const MovieInfo = ({movies, addToCart, cart}) => {
 const { id } = useParams();
 const movie = movies.find(movie => +movie.id === +id);
