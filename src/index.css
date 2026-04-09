@@ -75,7 +75,7 @@ nav {
 }
 
 .menu__backdrop {
-  position: absolute;
+  position: fixed;
   background-color: #242424;
   top: 0;
   left: 0;
@@ -391,9 +391,16 @@ li {
 }
 
 .movie__img {
+  margin: auto;
   max-height: 320px;
   max-width: 250px;
   transition: all 300ms ease;
+}
+
+.movie__title--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 select {
@@ -771,6 +778,15 @@ img {
 
   button {
     font-size: 18px;
+  }
+
+  .movies {
+    width: 90%;
+    margin: auto;
+  }
+
+  .movie__img {
+    margin: auto;
   }
 
   .movie {
