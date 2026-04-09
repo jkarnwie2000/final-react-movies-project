@@ -24,12 +24,16 @@ function filterMovies(filter) {
     }
 }
 
-async function fetchMovies() {
-const res = await axios.get(`https://www.omdbapi.com/?apikey=25cd594&s=${searchTerm}`)
-const data = res.data.Search
-setMovies(data);
-}
-  return (
+async function fetchMovies(e) {
+    e.preventDefault();
+    const res = await axios.get(
+      `https://www.omdbapi.com/?apikey=25cd594&s=${searchTerm}`,
+    );
+    const data = res.data.Search;
+    setMovies(data);
+  }
+
+return (
     <div className="movies__body">
         <div id="main" className="movies__main">
             <section>
