@@ -49,8 +49,8 @@ const Movies = () => {
     <div className="movies__body">
       <div id="main" className="movies__main">
         <section>
-          <div className="search">
             <h2 className="section__title">Find Your Movies Here</h2>
+          <div className="search-container">            
             <form className="search__form" onSubmit={fetchMovies}>
               <input
                 type="text"
