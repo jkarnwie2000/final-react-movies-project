@@ -1,20 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-<<<<<<< HEAD
-=======
-import { movies } from '../../data.js';
->>>>>>> 1bf12e4 (test run)
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import Movie from '../ui/Movie';
 import axios from 'axios';
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 1bf12e4 (test run)
-const MovieInfo = ({movies, addToCart, cart}) => {
+const MovieInfo = () => {
 const { id } = useParams();
 const [movie, setMovie] = useState({});
 

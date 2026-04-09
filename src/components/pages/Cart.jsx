@@ -30,12 +30,12 @@ return price;
                                 return (
                                     <div className='cart__item'>
                                         <div className='cart__movie'>
-                                            <img src={movie.url} 
+                                            <img src={movie.Poster} 
                                             className='cart__movie--img'
                                             alt="" />
                                             <div className='cart__movie--info'>
                                                 <span className='cart__movie--title'>
-                                                    {movie.title}
+                                                    {movie.Title}
                                                 </span>
                                                 <span className='cart__movie--price'>
                                                     ${(movie.salePrice || movie.originalPrice).toFixed(2)}

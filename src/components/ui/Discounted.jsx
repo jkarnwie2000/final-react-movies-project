@@ -1,5 +1,5 @@
 import Movie from "./Movie"
-import { movies } from "../../data.js";
+
 
 
 const Discounted = () => {
