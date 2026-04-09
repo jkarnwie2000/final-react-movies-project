@@ -52,7 +52,7 @@ const Nav = ({ numberOfItems }) =>  {
                         </Link>
                     </li>
                     <li className='menu__list'>
-                        <Link to='/' className='menu__link'>
+                        <Link to='/movies' className='menu__link'>
                         Movies
                         </Link>
                     </li>
