@@ -1,4 +1,3 @@
-import Discounted from "../ui/Discounted"
 import Explore from "../ui/Explore"
 import Featured from "../ui/Featured"
 import Highlights from "../ui/Highlights"
@@ -9,8 +8,7 @@ const Home = () => {
     <>
     <Landing />
     <Highlights />
-    <Featured />
-    <Discounted />
+    <Featured />    
     <Explore />
     </>
   )

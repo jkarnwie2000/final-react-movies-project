@@ -1,12 +1,11 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
-import Price from './Price';
-import Rating from './Rating';
+
 
 const Movie = ({ movie }) => {
 return (
     
 <div className="movie">
+<<<<<<< HEAD
     <Link to={`/movies/${movie.id}`}>
     <figure className="movie__img--wrapper">
         <img src={movie.url} alt='' className='movie__img' />
@@ -15,10 +14,18 @@ return (
     <div className="movie__title">
         <Link to={`/movies/${movie.id}`} className='movie__title--link'> 
         {movie.title}
+=======
+    <Link to={`/movies/${movie.imdbID}`}>
+    <figure className="movie__img--wrapper">
+        <img src={movie.Poster} alt='' className='movie__img' />
+    </figure>
+    </Link>
+    <div className="movie__title">
+        <Link to={`/movies/${movie.imdbID}`} className='movie__title--link'> 
+        {movie.Title}
+>>>>>>> 1bf12e4 (test run)
         </Link>
-    </div>
-    <Rating rating={movie.rating} />
-    <Price salePrice={movie.salePrice} originalPrice={movie.originalPrice} />
+    </div>    
 </div>
 
   );

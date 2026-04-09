@@ -767,9 +767,17 @@ img {
   }
 
   .movie {
+<<<<<<< HEAD
     width: 100%;
     display: flex;
     flex-direction: column;
+=======
+    display: flex;
+    flex-direction: column;
+  }
+  .movie {
+    width: 100%;
+>>>>>>> 1bf12e4 (test run)
   }
 
   .movie__selected {
@@ -814,3 +822,7 @@ img {
     padding-left: 0;
   }
 }
+
+
+
+

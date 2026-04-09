@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // EXTERNAL OMDB API DATA
 
 export const movies = [
@@ -116,3 +117,5 @@ export const movies = [
     },
     
   ];
+=======
+>>>>>>> 1bf12e4 (test run)
