@@ -11,8 +11,8 @@ return (
     </figure>
     </Link>
     <div className="movie__title">
-        <Link to={`/movies/${movie.imdbID}`} className='movie__title--link'> 
-        {movie.Title}
+        <Link to={`/movies/${movie.imdbID}`} className='movie__title--link'>       
+        {movie.Title}        
         </Link>
     </div>    
 </div>
