@@ -49,23 +49,21 @@ const Movies = () => {
     <div className="movies__body">
       <div id="main" className="movies__main">
         <section>
-            <h2 className="section__title">Find Your Movies Here</h2>
+            <h2 className="header__title">Julius Gold's Movies</h2>
           <div className="search-container">            
             <form className="search__form" onSubmit={fetchMovies}>
-              <input
+              <input                
                 type="text"
+                className="search__input search__input--focus"
                 placeholder="Search for movies..."
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-              <button onClick={fetchMovies}>Search</button>
+              <button className="search-btn" onClick={fetchMovies}>Search</button>
             </form>
           </div>
           <div className="movies__container">
             <div className="row">
-              <div className="movies__header">
-                <h2 className="section__title movies__header--title">
-                  All Movies
-                </h2>
+              <div className="movies__header">                
               </div>
               <div className="movies">
                 {movies.map((movie) => (

@@ -6,8 +6,8 @@ const Highlights = () => {
     <section id='highlights'>
         <div className='container'>
             <div className='row'>
-                <h2>
-                    Why Choose Julius Gold's Movies Library
+                <h2 className='header__title'>
+                    Enjoy Our Movies 
                 </h2>
                 <div className='highlight__wrapper'>                    
                     <Highlight icon={<FontAwesomeIcon icon='bolt' />}  

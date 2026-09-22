@@ -27,8 +27,8 @@ const MovieInfo = () => {
               <Link to="/movies" className="">
                 <FontAwesomeIcon icon="arrow-left" />
               </Link>
-              <Link to="/movies" className="">
-                <h2 movie__selected--title--top>Movies</h2>
+              <Link to="/movies">
+                <h2 className="movie__selected--title--top">Movies</h2>
               </Link>
             </div>
             <div className="movie__selected">
@@ -40,7 +40,7 @@ const MovieInfo = () => {
                 />
               </figure>
               <div className="movie__selected--description">
-                <h2 className="movie__selected--title">{movie.Title}</h2>
+                <h2 className="header__title">{movie.Title}</h2>
                 <div className="movie__selected--price"></div>
                 <div className="movie__summary">
                   <h3 className="movie__summary--title">Summary</h3>

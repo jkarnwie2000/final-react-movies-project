@@ -6,8 +6,8 @@ const Explore = () => {
     <section id='explore'>
         <div className='container'>
             <div className='row row__column'>
-                <h2>
-                    Explore More Movies
+                <h2 className='header__title'>
+                    Julius Gold's Movies
                 </h2>
                 <Link to='/movies'>
                 <button className='btn'>Explore movies</button>

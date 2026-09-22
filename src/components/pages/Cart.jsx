@@ -65,7 +65,7 @@ return price;
                         cart.length === 0 && (
                             <div className='cart__empty'>
                                 <img src="/assets/empty_cart.svg" alt="" className='cart__empty--img'/>
-                                <h2>You don't have any movies in your cart!</h2>
+                                <h2 className='header__title'>You don't have any movies in your cart!</h2>
                                 <Link to='/movies'>
                                 <button className='btn'>Browse Movies</button>                                
                                 </Link>

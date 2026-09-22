@@ -28,7 +28,7 @@ return (
     <section id="features">
         <div className="container">
             <div className="row">
-                <h2 className="section__title">
+                <h2 className="header__title">
                     Featured Movies
                 </h2>
                 <div className="movies">

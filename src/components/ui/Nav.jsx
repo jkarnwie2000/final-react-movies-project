@@ -13,11 +13,8 @@ const Nav = ({ numberOfItems }) =>  {
   }
 
   return (
-    <nav>
-        <div className='nav__container'>
-            <Link to='/'>
-            <img src="/assets/moviepagelogo.png" alt="" className='logo' />
-            </Link>
+    <nav className='navbar'>
+        <div className='nav__container'>            
             <ul className='nav__links'>
                 <li className='nav__list'>
                     <Link to='/' className='nav__link'>

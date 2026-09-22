@@ -5,14 +5,12 @@ const Landing = () => {
         <header>
             <div className='header__container'>
                 <div className='header__description'>
-                    <h2>Your favorite movies</h2>
+                    <h2 className='header__title'>Julius Gold's Movies</h2>
                     <a href="/#features">                    
                     <button className='btn'>Browse Movies</button>                                      
                     </a>
                 </div>
-                <figure className='header__img--wrapper'>
-                    <img src="/assets/moviesheadersvg.png" alt="" />
-                </figure>
+                <h2 className='header__title'>The Best Movies Repository in the World!</h2>
             </div>
         </header>
     </section>
