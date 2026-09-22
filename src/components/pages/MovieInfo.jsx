@@ -27,7 +27,7 @@ const MovieInfo = () => {
               <Link to="/movies" className="">
                 <FontAwesomeIcon icon="arrow-left" />
               </Link>
-              <Link to="/movies">
+              <Link to="/movies" className="movie__selected--title--top">
                 <h2 className="movie__selected--title--top">Movies</h2>
               </Link>
             </div>
