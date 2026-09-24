@@ -19,7 +19,7 @@ function movieExistsOnCart() {
 }
 useEffect(() => {
   axios
-    .get(`https://www.omdbapi.com/?apikey=25cd594&s=${searchTerm}`,)
+    .get(`https://www.omdbapi.com/?apikey=25cd594&i=${id}&plot=full`)
     .then(response => {
       setMovie(response.data);
     })

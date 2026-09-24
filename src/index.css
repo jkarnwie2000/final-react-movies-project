@@ -562,6 +562,7 @@ img {
 
 .movie__selected--figure {
   width: 40%;
+  height: 100%;
   padding: 16px 32px;
   display: flex;
   justify-content: center;
@@ -626,6 +627,7 @@ img {
 }
 
 .movie__selected--title {
+  color: gold;
   margin-bottom: 8px
 }
 
@@ -701,8 +703,8 @@ img {
 
 .cart__movie--img {
   width: 100%;
-  max-width: 90px;
-  max-height: 128px;
+  max-width: 120px;
+  max-height: 150px;
 }
 
 
@@ -715,6 +717,8 @@ img {
 
 .cart__movie--title {
   font-size: 20px;
+  font-weight: bold;
+  color: gold;
   margin-bottom: 16px;
 }
 
@@ -724,7 +728,8 @@ img {
 
 .cart__movie--remove {
   background-color: transparent;
-  color: #cf0000;
+  color: gold;
+  font-weight: bold;
   border: none;
   padding-left: 0;
   width: 48px;

@@ -50,7 +50,7 @@ function App() {
     <Routes>
       <Route path="/" exact element={<Home/>} />
       <Route path="/movies" exact element={<Movies movies={movies} />} />
-      <Route path="/movies/:id" element={<MovieInfo movies={movies} addToCart={addToCart} cart={cart} />} />
+      <Route path="/movies/:id" element={<MovieInfo movies={movies} addToCart={addToCart} cart={cart}/>} />      
       <Route path="/cart" element={<Cart movies={movies} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem} />} />
     </Routes>
     <Footer />
