@@ -15,12 +15,13 @@ function addMovieToCart(movie) {
 }
 
 function movieExistsOnCart() {
-    return cart.find(item => item.id === movie.id);
+    return cart.find(item => item.imdbID === movie.imdbID);
 }
 useEffect(() => {
   axios
     .get(`https://www.omdbapi.com/?apikey=25cd594&i=${id}&plot=full`)
     .then(response => {
+      console.log(response.data);
       setMovie(response.data);
     })
     .catch(error => {

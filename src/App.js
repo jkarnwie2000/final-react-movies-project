@@ -11,12 +11,16 @@ import Footer from "./components/ui/Footer";
 
 function App() {
   const [cart, setCart] = useState([]);
-  function addToCart(movie) {
-    setCart([...cart, movie]);
-  }
+  setCart([
+  ...cart,
+  {
+    ...movies[0],
+    quantity: 1,
+  },
+]);
 
   function changeQuantity(movie, quantity) {
-    setCart(cart.map(item => item.id === movie.id 
+    setCart(cart.map(item => item.imdbID === movie.imdbID 
       ? {
         ...item,
         quantity: +quantity,
@@ -27,7 +31,7 @@ function App() {
   }
 
   function removeItem(item) {
-    setCart(cart.filter(movie => movie.id !== item.id))
+    setCart(cart.filter(movie => movie.imdbID !== item.imdbID))
     console.log('removeItem', item)
   }
 
@@ -41,6 +45,16 @@ function App() {
 
   useEffect(() => {
   }, [cart])
+
+  function addToCart(movie) {
+  setCart([
+    ...cart,
+    {
+      ...movie,
+      quantity: 1,
+    },
+  ]);
+}
 
   return (
     
