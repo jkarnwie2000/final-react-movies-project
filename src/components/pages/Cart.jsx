@@ -20,6 +20,7 @@ return (
                 {
                     cart.map((movie) => {
                         return (
+                            <div key={movie.imdbID}>
                             <div className='cart__item'>
                                 <div className='cart__movie'>
                                     <img src={movie.Poster} 
@@ -44,6 +45,7 @@ return (
                                     />
                                 </div>                                        
                             </div>
+                           </div>
                         );
                     })}
                 </div>

@@ -12,7 +12,7 @@ import Footer from "./components/ui/Footer";
 function App() {
   const [cart, setCart] = useState([]);
   function addToCart(movie) {
-    setCart([...cart, {...movie, quantity: 1}])
+    setCart([...cart, movie]);
   }
 
   function changeQuantity(movie, quantity) {
