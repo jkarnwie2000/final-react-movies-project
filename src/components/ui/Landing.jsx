@@ -3,9 +3,9 @@ const Landing = () => {
   return (
     <section id='landing'>
         <header>
-            <div className='header__container'>
+            <div className='header__container'>                
                 <div className='header__description'>
-                    <h2 className='header__title'>Julius Gold's Movies</h2>
+                    <h2 className='header__title'>Julius Gold Movies</h2>
                     <a href="/#features">                    
                     <button className='btn'>Browse Movies</button>                                      
                     </a>

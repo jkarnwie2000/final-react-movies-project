@@ -18,6 +18,11 @@ const Nav = ({ numberOfItems }) =>  {
             <ul className='nav__links'>
                 <li className='nav__list'>
                     <Link to='/' className='nav__link'>
+                    <span className='nav__logo'>JGM</span>
+                    </Link>
+                </li>
+                <li className='nav__list'>
+                    <Link to='/' className='nav__link'>
                     Home
                     </Link>
                 </li>
@@ -41,8 +46,8 @@ const Nav = ({ numberOfItems }) =>  {
             <div className='menu__backdrop'>
                 <button className='btn__menu btn__menu--close' onClick={closeMenu}>
                     <FontAwesomeIcon icon='times' />
-                </button>
-                <ul className='menu__links'>
+                </button>                                           
+                <ul className='menu__links'>                    
                     <li className='menu__list'>
                         <Link to='/' className='menu__link'>
                         Home

@@ -86,6 +86,12 @@ nav {
   position: relative;
 }
 
+.nav__logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+}
+
 
 .btn__menu {
   background-color: transparent;

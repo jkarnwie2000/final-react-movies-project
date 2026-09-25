@@ -49,7 +49,7 @@ const Movies = () => {
     <div className="movies__body">
       <div id="main" className="movies__main">
         <section>
-            <h2 className="header__title">Julius Gold's Movies</h2>
+            <h2 className="header__title">Julius Gold Movies</h2>
           <div className="search-container">            
             <form className="search__form" onSubmit={fetchMovies}>
               <input                

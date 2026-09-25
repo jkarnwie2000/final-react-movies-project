@@ -7,7 +7,7 @@ const Explore = () => {
         <div className='container'>
             <div className='row row__column'>
                 <h2 className='header__title'>
-                    Julius Gold's Movies
+                    Julius Gold Movies
                 </h2>
                 <Link to='/movies'>
                 <button className='btn'>Explore movies</button>
