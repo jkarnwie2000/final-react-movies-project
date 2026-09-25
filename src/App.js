@@ -11,14 +11,7 @@ import Footer from "./components/ui/Footer";
 
 function App() {
   const [cart, setCart] = useState([]);
-  setCart([
-  ...cart,
-  {
-    ...movies[0],
-    quantity: 1,
-  },
-]);
-
+  
   function changeQuantity(movie, quantity) {
     setCart(cart.map(item => item.imdbID === movie.imdbID 
       ? {
@@ -35,17 +28,6 @@ function App() {
     console.log('removeItem', item)
   }
 
-  function numberOfItems() {
-    let counter = 0;
-    cart.forEach(item => {
-      counter += item.quantity
-    })
-    return counter;
-  }
-
-  useEffect(() => {
-  }, [cart])
-
   function addToCart(movie) {
   setCart([
     ...cart,
@@ -56,6 +38,26 @@ function App() {
   ]);
 }
 
+  function numberOfItems() {
+    let counter = 0;
+    cart.forEach(item => {
+      counter += item.quantity
+    })
+    return counter;
+  }
+
+  useEffect(() => {
+  }, [cart])
+  
+  function addToCart(movie) {
+  setCart([
+    ...cart,
+    {
+      ...movie,
+      quantity: 1,
+    },
+  ]);
+}
   return (
     
   <Router>
@@ -64,7 +66,7 @@ function App() {
     <Routes>
       <Route path="/" exact element={<Home/>} />
       <Route path="/movies" exact element={<Movies movies={movies} />} />
-      <Route path="/movies/:id" element={<MovieInfo movies={movies} addToCart={addToCart} cart={cart}/>} />      
+      <Route path="/movies/:id" element={<MovieInfo  movies={movies}  cart={cart}  addToCart={addToCart} />} />      
       <Route path="/cart" element={<Cart movies={movies} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem} />} />
     </Routes>
     <Footer />

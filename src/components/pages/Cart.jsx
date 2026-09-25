@@ -17,8 +17,7 @@ return (
                 <span className='cart__quantity'>Quantity</span>                        
                 </div>
                 <div className='cart__body'>
-                {
-                    cart.map((movie) => {
+                {cart.map((movie) => {
                         return (
                             <div key={movie.imdbID}>
                             <div className='cart__item'>
@@ -49,8 +48,7 @@ return (
                         );
                     })}
                 </div>
-                {
-                cart.length === 0 && (
+                {cart.length === 0 && (
                     <div className='cart__empty'>
                         <img src="/assets/empty_cart.svg" alt="" className='cart__empty--img'/>
                         <h2 className='header__title'>You don't have any movies in your cart!</h2>
