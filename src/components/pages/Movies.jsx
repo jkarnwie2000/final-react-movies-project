@@ -5,44 +5,16 @@ import axios from "axios";
 const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-
-//   function filterMovies(filter) {
-//     if (filter === "LOW_TO_HIGH") {
-//       setMovies(
-//         movies
-//           .slice()
-//           .sort(
-//             (a, b) =>
-//               (a.salePrice || a.originalPrice) -
-//               (b.salePrice || b.originalPrice),
-//           ),
-//       );
-//     }
-
-//     if (filter === "HIGH_TO_LOW") {
-//       setMovies(
-//         movies
-//           .slice()
-//           .sort(
-//             (a, b) =>
-//               (b.salePrice || b.originalPrice) -
-//               (a.salePrice || a.originalPrice),
-//           ),
-//       );
-//     }
-
-//     if (filter === "RATING") {
-//       setMovies(movies.slice().sort((a, b) => b.rating - a.rating));
-//     }
-//   }
+  const [searched, setSearched] = useState(false);
 
   async function fetchMovies(e) {
     e.preventDefault();
+    setSearched(true);
     const res = await axios.get(
       `https://www.omdbapi.com/?apikey=25cd594&s=${searchTerm}`,
     );
     const data = res.data.Search;
-    setMovies(data);
+    setMovies(data || []);
   }
 
   return (
@@ -58,7 +30,7 @@ const Movies = () => {
                 placeholder="Search for movies..."
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-              <button className="search-btn" onClick={fetchMovies}>Search</button>
+              <button className="search-btn" type="submit">Search</button>
             </form>
           </div>
           <div className="movies__container">
@@ -66,7 +38,10 @@ const Movies = () => {
               <div className="movies__header">                
               </div>
               <div className="movies">
-                {movies.map((movie) => (
+                {searched && movies.length === 0 && (
+                  <p style={{ color: "gold", fontWeight: "bold" }}>Movie not found.</p>
+                )}
+                  {movies.map((movie) => (
                   <Movie movie={movie} key={movie.id} />
                 ))}
               </div>

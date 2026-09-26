@@ -31,7 +31,7 @@ return (
                 <h2 className="header__title">
                     Featured Movies
                 </h2>
-                <div className="movies">
+                <div className="movies">                    
                     {movies.map(movie =>
                     <Movie movie={movie} key={movie.imdbID} />)
                     }
