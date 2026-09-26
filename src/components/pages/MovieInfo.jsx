@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 const MovieInfo = ({ movies, addToCart, cart }) => {
 const { id } = useParams();
 const [movie, setMovie] = useState(null);
-const [searchTerm, setSearchTerm] = useState("");
-
 
 function addMovieToCart(movie) {
     addToCart(movie);
