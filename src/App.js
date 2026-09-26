@@ -28,16 +28,6 @@ function App() {
     console.log('removeItem', item)
   }
 
-  function addToCart(movie) {
-  setCart([
-    ...cart,
-    {
-      ...movie,
-      quantity: 1,
-    },
-  ]);
-}
-
   function numberOfItems() {
     let counter = 0;
     cart.forEach(item => {
